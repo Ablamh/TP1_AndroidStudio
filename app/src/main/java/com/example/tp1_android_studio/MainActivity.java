@@ -10,6 +10,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 Button bexo1;
 Button bexo12;
+Button bexo8;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +30,15 @@ Button bexo12;
             public void onClick(View view) {
                 Intent it = new Intent( MainActivity.this,exo1Version2Activity.class);
                 startActivity(it);
+            }
+        });
+        bexo8=(Button) findViewById(R.id.exo8);
+        bexo8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent it = new Intent( MainActivity.this,trainHoraireActivity.class);
+                startActivity(it);
+
             }
         });
 

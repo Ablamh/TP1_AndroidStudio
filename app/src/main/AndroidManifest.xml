@@ -12,6 +12,9 @@
         android:theme="@style/Theme.Tp1_android_studio"
         tools:targetApi="31">
         <activity
+            android:name=".trainHoraireActivity"
+            android:exported="false" />
+        <activity
             android:name=".lancementOkExo6Activity"
             android:exported="false" />
         <activity
